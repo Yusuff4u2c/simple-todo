@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="app" class="flex flex-col items-center">
+      <div
+        class="flex flex-col px-5 bg-gray-100 py-4 h-screen max-w-[500px] w-full"
+      >
+      
+        <p class="text-2xl font-bold flex items-center gap-4 mb-3">
+          Todo List
+          <span
+            id="todo-list-count"
+            class="bg-indigo-600 p-2 inline-flex justify-center items-center text-sm w-6 h-6 rounded-full text-white"
+            >0</span
+          >
+        </p>
+
+        <div class="flex flex-col h-full gap-y-3" id="todo-items"></div>
+
+        <div class="flex gap-x-3 justify-center items-center">
+          <input
+            type="text"
+            class="text-sm px-2 grow h-[48px]"
+            id="todo-input"
+          />
+          <button
+            class="bg-indigo-200 my-3 w-min h-[48px] px-5 rounded-md text-lg"
+            id="todo-button"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/home.js"></script>
+  </body>
+</html>
